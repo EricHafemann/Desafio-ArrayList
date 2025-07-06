@@ -1,3 +1,3 @@
 # Cadastro ultilizando ArrayList
 
-V1 = 05/07-2025
+V1 = 05/07/2025
