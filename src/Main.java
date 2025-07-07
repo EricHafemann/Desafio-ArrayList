@@ -25,12 +25,8 @@ public class Main {
 
                 System.out.println("1- CADASTRAR ALUNO");
                 System.out.println("2- VER ALUNOS CADASTRADOS");
-
                 System.out.println("3- VER MÉDIA DA TURMA");
                 System.out.println("4- SAIR");
-
-                System.out.println("3- SAIR");
-
                 System.out.println("===========================");
                 System.out.print("Escolha uma opção: ");
 
