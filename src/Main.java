@@ -156,15 +156,17 @@ public class Main {
             int contAlunos = 1;
 
             for (String aluno : alunos) {
-
+                System.out.println("---------------------------");
                 System.out.println(contAlunos+"- " + aluno);
-                System.out.println("Notas: ");
-                System.out.println("1- Nota:"+notas.get(ind));
-                System.out.println("2- Nota:"+notas.get(ind + 1));
-                System.out.println("3- Nota:"+notas.get(ind + 2));
+                System.out.println("---------------------------");
+                System.out.println("NOTAS: ");
+                System.out.println("1-"+notas.get(ind));
+                System.out.println("2-"+notas.get(ind + 1));
+                System.out.println("3-"+notas.get(ind + 2));
+                System.out.println("---------------------------");
                 double md = (notas.get(ind) + notas.get(ind+1) + notas.get(ind+2) ) / 3;
                 System.out.printf("Média: %.2f\n", md);
-
+                System.out.println("---------------------------");
                 if (md >= 7)
                 {
                     sit = "Aprovado";
