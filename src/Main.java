@@ -58,6 +58,14 @@ public class Main {
                         System.out.println("\n\n================================");
                         System.out.println("Valor inválido. Tente novamente!");
                         System.out.println("================================");
+
+                        try {
+                            Thread.sleep(2000);
+                        }catch (Exception e)
+                        {
+                            System.out.println("Erro:"+e.getMessage());
+                        }
+
                         valido = false;
                         clearScream.limparTela();
                         menuInicial();
@@ -67,6 +75,12 @@ public class Main {
                 System.out.println("\n\n===========================");
                 System.out.println("   Digite apenas números.  ");
                 System.out.println("===========================");
+                try {
+                    Thread.sleep(2000);
+                }catch (Exception e1)
+                {
+                    System.out.println("Erro:"+e.getMessage());
+                }
                 clearScream.limparTela();
                 s.nextLine();
             }
