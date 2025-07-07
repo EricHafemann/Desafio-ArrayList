@@ -25,8 +25,12 @@ public class Main {
 
                 System.out.println("1- CADASTRAR ALUNO");
                 System.out.println("2- VER ALUNOS CADASTRADOS");
+
                 System.out.println("3- VER MÉDIA DA TURMA");
                 System.out.println("4- SAIR");
+
+                System.out.println("3- SAIR");
+
                 System.out.println("===========================");
                 System.out.print("Escolha uma opção: ");
 
@@ -34,7 +38,9 @@ public class Main {
                 s.nextLine();
 
                 switch (op) {
-                    case 1: {
+
+                    case 1:
+                    {
                         cadastrarAluno();
                         break;
                     }
@@ -54,6 +60,7 @@ public class Main {
                         System.exit(0);
                         break;
                     }
+
                     default:
                         System.out.println("\n\n================================");
                         System.out.println("Valor inválido. Tente novamente!");
@@ -69,18 +76,24 @@ public class Main {
                         valido = false;
                         clearScream.limparTela();
                         menuInicial();
+
+                        valido = false;
+                        clearScream.limparTela();
+
                 }
 
             } catch (InputMismatchException e) {
                 System.out.println("\n\n===========================");
                 System.out.println("   Digite apenas números.  ");
                 System.out.println("===========================");
+
                 try {
                     Thread.sleep(2000);
                 }catch (Exception e1)
                 {
                     System.out.println("Erro:"+e.getMessage());
                 }
+
                 clearScream.limparTela();
                 s.nextLine();
             }
