@@ -147,7 +147,9 @@ public class Main {
             menuInicial();
 
         } else {
-            System.out.println("Alunos cadastrados:\n");
+            System.out.println("---------------------------");
+            System.out.println("-   Alunos cadastrados:   -");
+            System.out.println("---------------------------\n");
 
             int ind = 0;
             String sit = null;
