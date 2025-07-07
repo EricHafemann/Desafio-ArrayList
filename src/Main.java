@@ -198,15 +198,24 @@ public class Main {
         int ind = 0;
         double soma = 0;
 
-        for (int i = 0; i < alunos.size(); i++) {
-            double mediaAluno = (notas.get(ind) + notas.get(ind + 1) + notas.get(ind + 2)) / 3.0;
-            soma += mediaAluno;
-            ind += 3;
+        if (alunos.isEmpty())
+        {
+            System.out.println("Não Possui Alunos!");
         }
 
-        double mediaTurma = soma / alunos.size();
+        else
+        {
+            for (int i = 0; i < alunos.size(); i++) {
+                double mediaAluno = (notas.get(ind) + notas.get(ind + 1) + notas.get(ind + 2)) / 3.0;
+                soma += mediaAluno;
+                ind += 3;
+            }
 
-        System.out.println("Média da Turma: " + mediaTurma);
+            double mediaTurma = soma / alunos.size();
+
+            System.out.println("Média da Turma: " + mediaTurma);
+        }
+
 
         System.out.println("\nAperte Enter para voltar ao Menu...");
         String a2 = s.nextLine();
